@@ -88,7 +88,8 @@ As part of a hands-on 30-day challenge, I designed and deployed a fully function
 
 ✅ **Accessed Windows Server via RDP**  
 📌 *Screenshot:*  
-![ModifyInboundSecurityGroupRules _ EC2 _ us-east-1_RDP](https://github.com/user-attachments/assets/b1fa9f1a-8a11-467a-afe3-05c6714b8a4d)
+![Remote Desktop Connection](https://github.com/user-attachments/assets/aa1a2276-1f5e-4aa6-88d7-b90c5ffcd001)
+
 
 
 ---
