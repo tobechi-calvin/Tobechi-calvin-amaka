@@ -8,7 +8,7 @@
 ---
 
 ## 🔧 Project Overview
-As part of a hands-on 30-day challenge, I designed and deployed a fully functional **Security Operations Center (SOC)** lab environment in AWS. This project demonstrates my ability to build, configure, and monitor infrastructure for real-time threat detection and log analysis using the **Elastic Stack (Elasticsearch, Kibana, and Fleet)**.
+As part of a hands, I designed and deployed a fully functional **Security Operations Center (SOC)** lab environment in AWS. This project demonstrates my ability to build, configure, and monitor infrastructure for real-time threat detection and log analysis using the **Elastic Stack (Elasticsearch, Kibana, and Fleet)**.
 
 ---
 
