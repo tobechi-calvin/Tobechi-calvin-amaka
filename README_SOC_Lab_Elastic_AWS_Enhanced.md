@@ -33,7 +33,7 @@ As part of a hands-on 30-day challenge, I designed and deployed a fully function
 
 ✅ **Installed Java 11 (OpenJDK)** to support Elasticsearch/Kibana  
 📌 *Screenshot:*  
-![Java Installed](Java%20installed%20as%20the%20requirement%20to%20install%20elastic%20and%20kibana.png)
+![Java installed as the requirement to install elastic and kibana](https://github.com/user-attachments/assets/1bf3b3db-0559-4e3b-91c1-06d6365fcca4)
 
 ---
 
@@ -42,13 +42,15 @@ As part of a hands-on 30-day challenge, I designed and deployed a fully function
 - `kibana.service` → ✅ *Active*
 
 📌 *Screenshot:*  
-![Elastic and Kibana Status](Elastic%20and%20Kibana%20installed%20and%20running.png)
+![Elastic and Kibana installed and running](https://github.com/user-attachments/assets/159ce0a3-cb11-4a1a-8199-465ab8b5eeef)
+
 
 ---
 
 ✅ **Kibana Service Running**  
 📌 *Screenshot:*  
-![Kibana Running](Kibana%20installed%20and%20runing.png)
+![Kibana installed and runing](https://github.com/user-attachments/assets/be6b91c7-f905-4508-8f33-5bb42f31c113)
+
 
 ---
 
@@ -57,13 +59,15 @@ As part of a hands-on 30-day challenge, I designed and deployed a fully function
 - Ubuntu Server (SSH)
 
 📌 *Screenshot:*  
-![Fleet Server Setup](Agents%20-%20Fleet%20-%20Elastic.png)
+![Agents - Fleet - Elastic](https://github.com/user-attachments/assets/c4f10688-dd0b-41bf-9c35-edda473dfcef)
+
 
 ---
 
 ✅ **Verified data ingestion on Kibana Discover**  
 📌 *Screenshot:*  
-![Kibana Logs View](Discover%20-%20Elastic%20logs.png)
+![Discover - Elastic logs](https://github.com/user-attachments/assets/ae5a63dd-fbb2-456e-9a1e-05500b2ce50c)
+
 
 ---
 
@@ -73,16 +77,19 @@ As part of a hands-on 30-day challenge, I designed and deployed a fully function
 - `22` (SSH), `3389` (RDP)
 
 📌 *Inbound Rules for Elastic/Kibana/Ubuntu:*  
-![Inbound Rules for Linux](ModifyInboundSecurityGroupRules%20_%20EC2%20_%20us-east-1.png)
+![ModifyInboundSecurityGroupRules _ EC2 _ us-east-1](https://github.com/user-attachments/assets/fa63b6ed-38c3-465c-bd7f-6df7ab139143)
+
 
 📌 *Inbound Rules for RDP (Windows Server):*  
-![Inbound Rules for Windows](ModifyInboundSecurityGroupRules%20_%20EC2%20_%20us-east-1_RDP.png)
+![ModifyInboundSecurityGroupRules _ EC2 _ us-east-1_RDP](https://github.com/user-attachments/assets/5ba3c992-aa22-41a6-ae13-0682f7908cdc)
+
 
 ---
 
 ✅ **Accessed Windows Server via RDP**  
 📌 *Screenshot:*  
-![Windows Server RDP](Remote%20Desktop%20Connection.png)
+![ModifyInboundSecurityGroupRules _ EC2 _ us-east-1_RDP](https://github.com/user-attachments/assets/b1fa9f1a-8a11-467a-afe3-05c6714b8a4d)
+
 
 ---
 
