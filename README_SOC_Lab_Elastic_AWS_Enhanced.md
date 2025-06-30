@@ -1,4 +1,4 @@
-# 🛡️ Mini SOC Lab on AWS with Elastic Stack (30-Day Cybersecurity Challenge)
+# 🛡️ Mini SOC Home Lab on AWS with Elastic Stack
 
 [![Elastic Stack](https://img.shields.io/badge/Elastic--Stack-7.17+-blue?logo=elastic)](https://www.elastic.co/)
 [![AWS](https://img.shields.io/badge/Hosted%20on-AWS-FF9900?logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
