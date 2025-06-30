@@ -25,7 +25,7 @@ As part of a hands-on 30-day challenge, I designed and deployed a fully function
 - Elastic Stack and agents deployed within this network on AWS EC2 instances.
 
 📌 **Network Diagram:**  
-![Architecture Diagram](30%20day%20challenge.drawio%20-%20draw.io.png)
+![30 day challenge drawio - draw io](https://github.com/user-attachments/assets/99405748-db0b-4dff-95fe-74e35777c400)
 
 ---
 
