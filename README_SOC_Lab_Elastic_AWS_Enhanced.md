@@ -46,23 +46,6 @@ As part of a hands, I designed and deployed a fully functional **Security Operat
 
 ---
 
-✅ **Created a Fleet Server and enrolled agents from:**
-- Windows Server (RDP)
-- Ubuntu Server (SSH)
-
-📌 *Screenshot:*  
-![Agents - Fleet - Elastic](https://github.com/user-attachments/assets/c4f10688-dd0b-41bf-9c35-edda473dfcef)
-
-
----
-
-✅ **Verified data ingestion on Kibana Discover**  
-📌 *Screenshot:*  
-![Elastic GUI](https://github.com/user-attachments/assets/090fb673-913d-4f9c-a908-25e10cdc88c8)
-
-
----
-
 ✅ **Customized AWS Security Group rules** for ports:  
 - `443` (HTTPS for Kibana)  
 - `9200` (Elasticsearch REST API)  
@@ -75,14 +58,27 @@ As part of a hands, I designed and deployed a fully functional **Security Operat
 📌 *Inbound Rules for RDP (Windows Server):*  
 ![ModifyInboundSecurityGroupRules _ EC2 _ us-east-1_RDP](https://github.com/user-attachments/assets/5ba3c992-aa22-41a6-ae13-0682f7908cdc)
 
+---
+
+✅ **Verified data ingestion on Kibana Discover**  
+📌 *Screenshot:*  
+![Elastic GUI](https://github.com/user-attachments/assets/090fb673-913d-4f9c-a908-25e10cdc88c8)
+
+
+---
+
+✅ **Created a Fleet Server and enrolled agents from:**
+- Windows Server (RDP)
+- Ubuntu Server (SSH)
+
+📌 *Screenshot:*  
+![Agents - Fleet - Elastic](https://github.com/user-attachments/assets/c4f10688-dd0b-41bf-9c35-edda473dfcef)
 
 ---
 
 ✅ **Accessed Windows Server via RDP**  
 📌 *Screenshot:*  
 ![Remote Desktop Connection](https://github.com/user-attachments/assets/aa1a2276-1f5e-4aa6-88d7-b90c5ffcd001)
-
-
 
 ---
 
