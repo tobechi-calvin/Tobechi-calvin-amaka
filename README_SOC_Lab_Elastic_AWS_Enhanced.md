@@ -44,15 +44,6 @@ As part of a hands, I designed and deployed a fully functional **Security Operat
 📌 *Screenshot:*  
 ![Elastic and Kibana installed and running](https://github.com/user-attachments/assets/159ce0a3-cb11-4a1a-8199-465ab8b5eeef)
 
-
----
-
-✅ **Elastic GUI Running**  
-📌 *Screenshot:*  
-![Elastic GUI](https://github.com/user-attachments/assets/090fb673-913d-4f9c-a908-25e10cdc88c8)
-
-
-
 ---
 
 ✅ **Created a Fleet Server and enrolled agents from:**
@@ -101,6 +92,7 @@ As part of a hands, I designed and deployed a fully functional **Security Operat
 - Elastic Agent logs confirm successful communication with the Fleet server
 
 📌 *Screenshot:*  
+![Elastic GUI](https://github.com/user-attachments/assets/090fb673-913d-4f9c-a908-25e10cdc88c8)
 (Already shown above in “Kibana Logs View”)
 
 ---
