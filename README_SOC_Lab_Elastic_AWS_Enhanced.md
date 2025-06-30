@@ -58,7 +58,7 @@ As part of a hands, I designed and deployed a fully functional **Security Operat
 
 ✅ **Verified data ingestion on Kibana Discover**  
 📌 *Screenshot:*  
-![Discover - Elastic logs](https://github.com/user-attachments/assets/ae5a63dd-fbb2-456e-9a1e-05500b2ce50c)
+![Elastic GUI](https://github.com/user-attachments/assets/090fb673-913d-4f9c-a908-25e10cdc88c8)
 
 
 ---
@@ -91,8 +91,9 @@ As part of a hands, I designed and deployed a fully functional **Security Operat
 - Monitored fields like `agent.name`, `cloud.account.id`, `timestamp`, etc.
 - Elastic Agent logs confirm successful communication with the Fleet server
 
-📌 *Screenshot:*  
-![Elastic GUI](https://github.com/user-attachments/assets/090fb673-913d-4f9c-a908-25e10cdc88c8)
+📌 *Screenshot:*
+![Discover - Elastic logs](https://github.com/user-attachments/assets/ae5a63dd-fbb2-456e-9a1e-05500b2ce50c)
+
 (Already shown above in “Kibana Logs View”)
 
 ---
