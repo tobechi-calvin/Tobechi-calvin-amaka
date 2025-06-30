@@ -47,9 +47,10 @@ As part of a hands, I designed and deployed a fully functional **Security Operat
 
 ---
 
-✅ **Kibana Service Running**  
+✅ **Elastic GUI Running**  
 📌 *Screenshot:*  
-![Kibana installed and runing](https://github.com/user-attachments/assets/be6b91c7-f905-4508-8f33-5bb42f31c113)
+![Elastic GUI](https://github.com/user-attachments/assets/090fb673-913d-4f9c-a908-25e10cdc88c8)
+
 
 
 ---
