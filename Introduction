@@ -1,18 +1,96 @@
 # 🛡️ Tobechi Calvin Amaka – My SOC Analyst Portfolio
 
-Welcome to my cybersecurity portfolio! I’m a Tier 2 SOC Analyst with over 5 years of experience in incident response, threat detection, phishing triage, and Splunk engineering. 
-This repository showcases some of my key projects and contributions related to SIEM tuning, malware analysis, and playbook automation.
+Welcome to my cybersecurity portfolio! I’m a Tier 2 SOC Analyst with over 5 years of experience in incident response, threat detection, phishing triage, and Splunk engineering. This repository showcases some of my key projects and contributions related to SIEM tuning, malware analysis, and playbook automation.
 
 ## 🔍 Featured Projects
 
-- **Phishing Triage Playbook** – A visual and JSON playbook to automate phishing alert triage.
-- **Splunk Dashboards** – XML and JSON dashboards built for brute force, insider threats, and beaconing detection.
-- **Malware Analysis** – Reports and YARA rule examples based on sandbox analysis.
-- **Threat Hunting** – Custom Splunk queries mapped to the MITRE ATT&CK framework.
-- **Incident Response** – Process documentation aligned with NIST IR standards.
+### 📥 Phishing Triage Playbook
+- A JSON-based SOAR playbook that automates phishing alert analysis.
+- Integrates with VirusTotal, URLScan, and AbuseIPDB for IOC enrichment.
+- Includes flow diagram and remediation logic.
+
+**Sample JSON Snippet:**
+```json
+{
+  "playbook": {
+    "name": "Phishing Triage",
+    "steps": [
+      {"action": "Extract indicators from email"},
+      {"action": "Enrich IOCs using VirusTotal & URLScan"},
+      {"action": "Check blocklists (AbuseIPDB, IPVoid)"},
+      {"decision": "Is IOC malicious?"},
+      {"action": "Quarantine email & reset user password if true"}
+    ]
+  }
+}
+```
+
+### 📊 Splunk Dashboards
+- Dashboards for detecting brute force attempts, insider threats, and lateral movement.
+- Includes sample XML dashboard files and dashboard screenshots.
+- Built using real-world SOC alert patterns.
+
+**Sample Splunk XML Dashboard Query:**
+```xml
+<dashboard>
+  <label>Brute Force Detection</label>
+  <row>
+    <panel>
+      <chart>
+        <search>
+          <query>index=auth sourcetype=linux_secure "authentication failure" | stats count by user, src_ip</query>
+        </search>
+        <title>Failed Login Attempts by Source</title>
+      </chart>
+    </panel>
+  </row>
+</dashboard>
+```
+
+### 🦠 Malware Analysis
+- Sandbox-based malware analysis walkthroughs.
+- Includes static and dynamic analysis reports.
+- Sample YARA rules for detecting malware behavior.
+
+**Sample YARA Rule:**
+```yara
+rule TrickBot_Example {
+  meta:
+    description = "Detect TrickBot executable"
+    author = "Tobechi Amaka"
+  strings:
+    $s1 = "This program cannot be run in DOS mode"
+    $s2 = "GetProcAddress"
+    $s3 = "kernel32.dll"
+  condition:
+    all of ($s*)
+}
+```
+
+### 🎯 Threat Hunting with Splunk
+- Search queries mapped to MITRE ATT&CK TTPs.
+- Examples: Suspicious PowerShell, Beaconing, Credential Dumping.
+- MITRE technique IDs, query logic, and detection context explained.
+
+**Sample Query (Credential Dumping - T1003):**
+```splunk
+index=windows sourcetype=WinEventLog:Security EventCode=4624 LogonType=2 OR LogonType=10 | stats count by user, src_ip
+```
+
+### 🚨 Incident Response Playbooks
+- Flowchart and NIST-based playbook for initial triage to recovery.
+- Includes containment, eradication, and lessons-learned documentation.
+
+**IR Flow (NIST):**
+1. Preparation
+2. Detection & Analysis
+3. Containment
+4. Eradication
+5. Recovery
+6. Post-Incident Review
 
 ## 🛠️ Tools & Technologies
 Splunk, CrowdStrike, QRadar, Nessus, Qualys, SOAR, VirusTotal, URLScan, Python, PowerShell, Git
 
-## 📢 Contact
+## 📫 Contact
 📧 tobechicalvin@gmail.com | 📍 Dallas, TX | 📞 414-388-8044
