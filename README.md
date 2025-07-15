@@ -33,3 +33,31 @@ Hi! I’m **Tobechi Calvin Amaka**, a **Tier 2 SOC Analyst** with **5+ years** o
 - ⚙️ SOAR & Playbook Automation
 
 This portfolio highlights my real-world security engineering skills and practical SOC use cases.
+
+## 🚀 Featured Projects
+
+---
+
+### 📥 Phishing Triage Playbook
+
+- ✅ JSON-based SOAR automation for phishing alert handling  
+- 🔗 Integrates with VirusTotal, URLScan, and AbuseIPDB  
+- 🧠 Includes decision trees and remediation logic
+
+<details>
+<summary>📄 Sample JSON Snippet</summary>
+
+json
+{
+  "playbook": {
+    "name": "Phishing Triage",
+    "steps": [
+      {"action": "Extract indicators from email"},
+      {"action": "Enrich IOCs using VirusTotal & URLScan"},
+      {"action": "Check blocklists (AbuseIPDB, IPVoid)"},
+      {"decision": "Is IOC malicious?"},
+      {"action": "Quarantine email & reset user password if true"}
+    ]
+  }
+}
+</details>
