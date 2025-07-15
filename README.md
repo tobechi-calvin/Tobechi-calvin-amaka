@@ -62,17 +62,16 @@ This portfolio highlights my real-world security engineering skills and practica
     ]
   }
 }
-📊 Splunk Security Dashboards
-👀 Visualizations for brute force, insider threats, and lateral movement
 
-🛠️ Uses real-world SOC alert patterns
+### 📊 Splunk Security Dashboards
 
-📸 Includes XML samples and screenshots
+- 📈 Visualizations for brute force attacks, insider threats, and lateral movement  
+- 🔍 Uses real-world SOC alert patterns  
+- 🧾 Includes XML-based dashboard configuration examples
 
-<details> <summary>📄 Sample Splunk Query</summary>
-xml
-Copy
-Edit
+**Sample Splunk Query:**
+
+```xml
 <dashboard>
   <label>Brute Force Detection</label>
   <row>
@@ -86,4 +85,5 @@ Edit
     </panel>
   </row>
 </dashboard>
-</details>
+
+
