@@ -7,6 +7,21 @@
 
 ---
 
+## 📂 Table of Contents
+
+- [👋 About Me](#-about-me)
+- [🚀 Featured Projects](#-featured-projects)
+  - [📥 Phishing Triage Playbook](#-phishing-triage-playbook)
+  - [📊 Splunk Security Dashboards](#-splunk-security-dashboards)
+  - [🦠 Malware Analysis Lab](#-malware-analysis-lab)
+  - [🎯 Threat Hunting with Splunk](#-threat-hunting-with-splunk)
+  - [🚨 Incident Response Playbooks](#-incident-response-playbooks)
+  - [🔧 Splunk Admin – L2 SOC Analyst Use Case](#-splunk-admin--l2-soc-analyst-use-case)
+- [🛠️ Tools & Technologies](#️-tools--technologies)
+- [📫 Contact](#-contact)
+
+---
+
 ## 👋 About Me
 
 Hi! I’m **Tobechi Calvin Amaka**, a **Tier 2 SOC Analyst** with **5+ years** of experience in:
@@ -15,7 +30,6 @@ Hi! I’m **Tobechi Calvin Amaka**, a **Tier 2 SOC Analyst** with **5+ years** o
 - 🚨 Incident Response  
 - 📧 Phishing Triage  
 - 📊 Splunk Engineering  
-- ⚙️ SOAR & Playbook Automation  
-- 🔧 Splunk Administration
+- ⚙️ SOAR & Playbook Automation
 
 This portfolio highlights my real-world security engineering skills and practical SOC use cases.
