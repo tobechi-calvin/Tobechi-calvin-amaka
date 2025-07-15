@@ -28,7 +28,7 @@ Hi! I’m **Tobechi Calvin Amaka**, a **Tier 2 SOC Analyst** with **5+ years** o
 - 🔍 Threat Detection  
 - 🚨 Incident Response  
 - 📧 Phishing Triage  
-- 📊 Splunk Engineering  
+- 📊 Splunk Administration  
 - ⚙️ SOAR & Playbook Automation
 
 This portfolio highlights my real-world security engineering skills and practical SOC use cases.
