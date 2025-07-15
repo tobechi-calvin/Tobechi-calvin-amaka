@@ -57,7 +57,130 @@ json
       {"action": "Check blocklists (AbuseIPDB, IPVoid)"},
       {"decision": "Is IOC malicious?"},
       {"action": "Quarantine email & reset user password if true"}
-    ]
   }
 }
 </details>
+
+📊 Splunk Security Dashboards
+👀 Visualizations for brute force, insider threats, and lateral movement
+
+🛠️ Uses real-world SOC alert patterns
+
+📸 Includes XML samples and screenshots
+
+<details> <summary>📄 Sample Splunk Query</summary>
+xml
+Copy
+Edit
+<dashboard>
+  <label>Brute Force Detection</label>
+  <row>
+    <panel>
+      <chart>
+        <search>
+          <query>index=auth sourcetype=linux_secure "authentication failure" | stats count by user, src_ip</query>
+        </search>
+        <title>Failed Login Attempts by Source</title>
+      </chart>
+    </panel>
+  </row>
+</dashboard>
+</details>
+🦠 Malware Analysis Lab
+🔬 Conducted static and dynamic analysis in sandbox environments
+
+🧰 Wrote custom YARA rules for malware behavior detection
+
+<details> <summary>📄 Sample YARA Rule</summary>
+yara
+Copy
+Edit
+rule TrickBot_Example {
+  meta:
+    description = "Detect TrickBot executable"
+    author = "Tobechi Amaka"
+  strings:
+    $s1 = "This program cannot be run in DOS mode"
+    $s2 = "GetProcAddress"
+    $s3 = "kernel32.dll"
+  condition:
+    all of ($s*)
+}
+</details>
+🎯 Threat Hunting with Splunk
+🔎 Created queries mapped to MITRE ATT&CK
+
+🎯 Use cases: PowerShell abuse, beaconing, credential dumping (T1003)
+
+<details> <summary>📄 Credential Dumping (T1003)</summary>
+splunk
+Copy
+Edit
+index=windows sourcetype=WinEventLog:Security EventCode=4624 LogonType=2 OR LogonType=10
+| stats count by user, src_ip
+</details>
+🚨 Incident Response Playbooks
+📋 Based on NIST 800-61
+
+Includes visual workflows and escalation paths
+
+Lifecycle:
+
+🛠️ Preparation
+
+🚨 Detection & Analysis
+
+🔐 Containment
+
+🧹 Eradication
+
+🔄 Recovery
+
+📚 Post-Incident Review
+
+🔧 Splunk Admin – L2 SOC Analyst Use Case
+As a Level 2 SOC Analyst, I also handled Splunk Administration tasks to improve security visibility and streamline incident response.
+
+✅ Key Contributions:
+🔄 Onboarded security logs (Windows, Linux, EDR, firewalls, proxies)
+
+📁 Built custom indexes, sourcetypes, and field extractions
+
+🧹 Tuned props.conf and transforms.conf for log parsing
+
+🔐 Managed roles and access controls for search heads
+
+🧠 Used CIM to normalize logs for correlation and threat detection
+
+📊 Optimized dashboard performance and scheduled search alerts
+
+💼 Real-World Example:
+Goal: Detect lateral movement through network logon attempts.
+
+Steps:
+
+Onboarded logs from Windows event sources via Universal Forwarders
+
+Normalized fields using CIM
+
+Created search queries for LogonType=3 with rare src_ip + user combo
+
+Built dashboard visualizing spike in failed logins by host/IP
+
+Alert triggered to notify team of unusual activity in real-time
+
+🛠️ Tools & Technologies
+Category	Tools Used
+SIEM & EDR	Splunk, CrowdStrike, QRadar
+Vulnerability Mgmt	Nessus, Qualys
+Threat Intel	VirusTotal, URLScan
+Scripting & SOAR	Python, PowerShell, JSON-based Playbooks
+Version Control	Git
+
+📫 Contact
+📧 Email: tobechicalvin@gmail.com
+📍 Location: Dallas, TX
+📞 Phone: 414-388-8044
+🌐 GitHub: tobechi-calvin
+
+This portfolio is continuously updated as I grow in the cybersecurity field. Thank you for visiting!
