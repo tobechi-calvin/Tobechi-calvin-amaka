@@ -47,7 +47,7 @@ This portfolio highlights my real-world security engineering skills and practica
 <details>
 <summary>📄 Sample JSON Snippet</summary>
 
-json
+# ```json
 {
   "playbook": {
     "name": "Phishing Triage",
@@ -57,9 +57,14 @@ json
       {"action": "Check blocklists (AbuseIPDB, IPVoid)"},
       {"decision": "Is IOC malicious?"},
       {"action": "Quarantine email & reset user password if true"}
+    ]
   }
 }
-</details>
+
+
+
+
+
 
 📊 Splunk Security Dashboards
 👀 Visualizations for brute force, insider threats, and lateral movement
