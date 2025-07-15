@@ -1,6 +1,6 @@
 # 🛡️ Tobechi Calvin Amaka – SOC Analyst Portfolio
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/tobechi-calvin](https://www.linkedin.com/in/tobechi-calvin-79003925a/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tobechi-calvin-79003925a/)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat&logo=github)](https://github.com/tobechi-calvin)
 [![Email](https://img.shields.io/badge/Email-Me-red?style=flat&logo=gmail)](mailto:tobechicalvin@gmail.com)
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=tobechi-calvin.Mini-Soc-Home-Lab)
