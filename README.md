@@ -10,7 +10,7 @@
 ## 📂 Table of Contents
 
 - [👋 About Me](#-about-me)
-- [🚀 Featured Projects](#-https://github.com/tobechi-calvin/Mini-Soc-Home-Lab/blob/main/Featured%20Projects)
+- [🚀 Featured Projects](#-Featured-Projects)
   - [📥 Phishing Triage Playbook](#-phishing-triage-playbook)
   - [📊 Splunk Security Dashboards](#-splunk-security-dashboards)
   - [🦠 Malware Analysis Lab](#-malware-analysis-lab)
