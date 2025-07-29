@@ -94,7 +94,7 @@ As part of a hands, I designed and deployed a fully functional **Security Operat
 
 ---
 
-## 🧪 Next Phase (Optional Enhancements)
+## 🧪 Next Phase
 - Simulate attacker activity from Kali Linux (e.g., reverse shell or brute force)
 - Detect and alert on suspicious behavior using **Elastic Security**
 - Forward alerts to the **OS Ticket System** for incident triaging
@@ -103,5 +103,5 @@ As part of a hands, I designed and deployed a fully functional **Security Operat
 ---
 
 ## 📁 GitHub Repository
-👉 _Coming Soon or [Insert your repo link]_
+👉 _Coming Soon 
 
