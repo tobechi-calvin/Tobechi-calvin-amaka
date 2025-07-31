@@ -15,8 +15,5 @@ I’m a dedicated Tier 2 SOC Analyst with hands-on experience in threat detectio
 ---
 💬 Let's Connect
 
-💬 Let's Connect
-
 - 📧 Email: [tobechicalvin@gmail.com](mailto:tobechicalvin@gmail.com)  
-- 🌐 LinkedIn: [Tobechi Amaka](https://www.linkedin.com/in/tobechi-calvin-79003925a) 
-"""
+- 🌐 LinkedIn: [Tobechi Amaka](https://www.linkedin.com/in/tobechi-calvin-79003925a)
