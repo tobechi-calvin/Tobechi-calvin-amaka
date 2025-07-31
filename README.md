@@ -11,7 +11,7 @@ As a passionate cybersecurity professional, beauty entrepreneur, and aspiring De
 | Project Name | Description |
 |-------------|-------------|
 | [SOC Analyst Lab Setup](https://github.com/tobechi-calvin/Splunk-Projects/blob/main/README.md) | ELK Stack + Fleet Integration lab for centralized security monitoring |
-| [Windows Security Log Analysis](#) | Investigating Windows logs for real-world security events |
+| [Windows Security Log Analysis](https://github.com/tobechi-calvin/Windows-Security-Log-Analysis) | Investigating Windows logs for real-world security events |
 | [Python for SOC Analysts](#) | Python scripts and automations for Tier 1/Tier 2 SOC workflows |
 | [Beauty Business Booking System](#) | Web-based booking app for managing client appointments at Joviflawlessbeauty |
 
