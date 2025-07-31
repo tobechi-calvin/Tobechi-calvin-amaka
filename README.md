@@ -1,40 +1,116 @@
-# Home-Lab: Security Monitoring and SIEM 
+# 🛡️ Security Monitoring Home Lab with ELK Stack + Fleet
 
-This repository contains hands-on guides for setting up various **Security Monitoring Home Labs**. Each lab provides a detailed setup process, configuration, and usage instructions for a specific monitoring tool, enabling users to simulate real-world security monitoring scenarios in a controlled environment.
-
----
-
-## 📂 Hands-on Labs
-
-| **Lab No.** | **Lab Title**                                             | **Description**                                                                                           |
-|-------------|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| 1           | [Security Monitoring using AlienVault OSSIM](Security%20Monitoring%20using%20AlienVault%20OSSIM.md) | Set up **AlienVault OSSIM** for unified security management, including SIEM, vulnerability scanning, and threat intelligence integration. |
-| 2           | [Security Monitoring using ELK](Security%20Monitoring%20using%20ELK.md)                         | Utilize the **ELK Stack** (Elasticsearch, Logstash, Kibana) for centralized log collection, indexing, and visualization. Build dashboards and queries for threat detection. |
-| 3           | [Security Monitoring using Grafana and Prometheus](Security%20Monitoring%20using%20Grafana%20and%20Prometheus.md) | Configure **Grafana** and **Prometheus** to monitor system metrics and alerts in real-time. Learn to create insightful dashboards for performance and security. |
-| 4           | [Security Monitoring using Splunk](Security%20Monitoring%20using%20Splunk.md)                  | Explore **Splunk** for advanced log monitoring, search, and analysis. Build use cases for incident detection and response using Splunk queries. |
-| 5           | [Security Monitoring with Wazuh](Security%20Monitoring%20with%20Wazuh.md)                      | Implement **Wazuh** as an open-source security monitoring and compliance platform. Learn how to deploy agents and monitor events. |
-
+## 🎯 Objective  
+Set up a **Security Monitoring Home Lab** using the **ELK Stack** (Elasticsearch, Logstash, Kibana) for centralized log analysis and monitoring, and extend its functionality by integrating **Fleet** to manage agents on other servers.
 
 ---
 
-## 🎯 Objectives
+## 🧰 Requirements  
+### Virtualization Tools (Choose One)
+- [VirtualBox](https://www.virtualbox.org/)
+- [VMware Workstation Pro](https://www.vmware.com/products/workstation-pro.html)
+- [Proxmox VE](https://www.proxmox.com/)
 
-- Understand the installation and configuration process for each tool.
-- Simulate real-world security monitoring use cases.
-- Gain hands-on experience with log collection, parsing, and visualization.
-- Develop skills in setting up dashboards, alerts, and queries for threat detection.
+### System Setup
+- **2 Ubuntu 20.04+ servers**
+  - **ELK Stack Manager**
+  - **Fleet Agent Node**
+- **Stable Internet Connection**
+- **Sudo privileges** on both servers
+
+---
+
+## ⚙️ Step-by-Step Setup
+
+### 1. 🔧 Install ELK Stack on ELK Manager
+```bash
+sudo apt update && sudo apt upgrade -y
+
+# Install Elasticsearch
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+sudo apt install apt-transport-https
+echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-8.x.list
+sudo apt update && sudo apt install elasticsearch
+
+# Enable Elasticsearch
+sudo systemctl enable --now elasticsearch
+
+# Install and start Kibana
+sudo apt install kibana
+sudo systemctl enable --now kibana
+```
+
+📍 **Access Kibana at**:  
+```
+http://<ELK_SERVER_IP>:5601
+```
 
 ---
 
-## 🛠️ Prerequisites
+### 2. 🚀 Install Fleet Server (on ELK Manager)
+```bash
+sudo apt install elastic-agent
 
-1. A computer or virtual machine with the required operating system and resources.
-2. Basic knowledge of system administration and networking.
-3. Familiarity with Linux commands and security concepts.
+# Replace with actual ELK server IP
+sudo elastic-agent enroll --url=http://<ELK_SERVER_IP>:8220 --fleet-server-es=http://<ELK_SERVER_IP>:9200
+
+sudo systemctl enable --now elastic-agent
+```
 
 ---
-## 🤝 Project Help
 
+### 3. 🤖 Install Fleet Agent on Second Ubuntu Server
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install elastic-agent
 
+# Replace values with those from Kibana Fleet setup
+sudo elastic-agent enroll --url=http://<FLEET_SERVER_IP>:8220 --enrollment-token=<ENROLLMENT_TOKEN>
+```
 
-Feel free to connect with me on any of these platforms!
+---
+
+### 4. ✅ Verify Agent Integration
+- Log in to **Kibana**
+- Navigate to `Fleet > Agents`
+- Confirm new agent status is **Healthy**
+
+---
+
+### 5. 📄 Test Log Collection
+- Generate test logs (system or application logs)
+- Check **Kibana > Discover** for incoming data
+
+---
+
+## ✅ Conclusion
+You now have a fully functional **centralized security log monitoring** setup with:
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+- Fleet for scalable agent management  
+This setup is ideal for learning **real-world SOC skills**, monitoring, and incident detection!
+
+---
+
+## 🌟 Ultimate Security Analyst Course
+
+Get hands-on and master cybersecurity with our structured course:
+
+- 🎥 **145+ Video Tutorials**
+- 💻 **13 Hands-on Beginner Courses**
+- 🛠 **90-Day Advanced Projects Challenge**
+- 🤝 **Lifetime Community Access**
+- 🏅 **Hall of Fame Recognition**
+
+<a href="https://learn.haxsecurity.com/services/securitychallenge">
+  <img src="https://img.shields.io/badge/-Enroll%20Now-008CBA?&style=for-the-badge&logo=Book&logoColor=white" alt="Enroll Now"/>
+</a>
+
+---
+
+## 📂 License
+This project is open-source and available for learning and educational purposes.
+
+---
+
+## 🙌 Contributions
+Feel free to fork this repo, add more tools (e.g., Osquery, Zeek, Velociraptor), and submit a pull request!
