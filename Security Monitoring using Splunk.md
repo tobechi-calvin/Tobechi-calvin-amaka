@@ -165,7 +165,3 @@ The home-lab set up is designed with VMware workstation.
 
   ## Conclusion
   This setup allows you to analyze syslogs from a second Ubuntu server using Splunk's powerful interface. By following this guide, you now have a functional home lab for practicing security investigations, monitoring, and analysis. Experiment with different log sources and enrich your skills further!
-
-<a href="https://learn.haxsecurity.com/services/securitychallenge">
-  <img src="https://img.shields.io/badge/-Enroll%20Now-008CBA?&style=for-the-badge&logo=Book&logoColor=white" alt="Enroll Now"/>
-</a>
