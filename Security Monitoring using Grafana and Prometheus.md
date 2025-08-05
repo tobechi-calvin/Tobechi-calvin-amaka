@@ -198,8 +198,3 @@ Start-Service winlogbeat
 ## Conclusion
 This guide demonstrates setting up a home lab with Grafana, Prometheus, Loki, Promtail, and Winlogbeat to monitor Ubuntu and Windows machines. By centralizing logs and metrics, you can effectively analyze and enhance your system's security.
 
-
-
-<a href="https://learn.haxsecurity.com/services/securitychallenge">
-  <img src="https://img.shields.io/badge/-Enroll%20Now-008CBA?&style=for-the-badge&logo=Book&logoColor=white" alt="Enroll Now"/>
-</a>
