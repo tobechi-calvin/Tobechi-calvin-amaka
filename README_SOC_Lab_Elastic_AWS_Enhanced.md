@@ -60,7 +60,7 @@ It demonstrates hands-on skills in **cloud deployment, threat detection, log ana
     - `ModifyInboundSecurityGroupRules _ EC2 _ us-east-1_RDP`
 
 - ✅ Verified data ingestion in Kibana Discover  
-  <img width="1915" height="985" alt="Discover - Elastic logs" src="https://github.com/user-attachments/assets/1dc7b54c-4236-4780-ae2c-12b96f0e3f38" />
+  
  `Elastic GUI`
 
 - ✅ Created **Fleet Server** and enrolled agents:  
@@ -85,7 +85,6 @@ It demonstrates hands-on skills in **cloud deployment, threat detection, log ana
   - `timestamp`
 - Confirmed **agent-heartbeat and Fleet communication**.  
 
-<img width="1915" height="985" alt="Discover - Elastic logs" src="https://github.com/user-attachments/assets/549411df-23db-48b3-abcb-3bf4b516de8c" />
  `Discover - Elastic logs`
 
 ---
@@ -103,8 +102,6 @@ Using Crowbar from a Kali Linux machine, I launched a brute-force attack against
 
 
 Elastic map showing failed RDP logins from multiple geolocations
-<img width="1892" height="991" alt="2025-08-19 08_35_34- Dashboard" src="https://github.com/user-attachments/assets/22349cb3-44f0-440c-9887-0954757a023d" />
-
 
 👉 Result: Elastic successfully logged failed RDP attempts across different IPs (US, Iran, Russia), confirming visibility into brute-force attempts.
 
@@ -117,7 +114,7 @@ After repeated attempts, the brute-force simulation resulted in a successful log
 
 Successful login attempt with LogonType 10 & 7
 Elastic detection of successful login event
-<img width="1918" height="988" alt="2025-08-19 08_53_06- Successful loggin attempt with LogonType 10   7" src="https://github.com/user-attachments/assets/ed29fec1-0ee4-442b-9592-03fb49619128" />
+
 
 👉 Result: Elastic captured Event ID 4624 with LogonType 10 (remote) and LogonType 7 (unlock), confirming attacker access and persistence.
 
@@ -126,14 +123,10 @@ Elastic detection of successful login event
 I configured Elastic SIEM dashboards to monitor both failed and successful authentication attempts.
 
 📌 Dashboard.png (SOC dashboard overview)
-<img width="1892" height="991" alt="2025-08-19 08_35_34- Dashboard" src="https://github.com/user-attachments/assets/1c4e071d-c3c8-4298-ae83-0469868ccdd1" />
-
 
 Discover - Elastic logs.png (raw failed/successful login events)
 
 Successful login attempt with LogonType 10 & 7.png (highlighted detection logs)
-<img width="1918" height="988" alt="2025-08-19 08_53_06- Successful loggin attempt with LogonType 10   7" src="https://github.com/user-attachments/assets/635d263b-e222-4a0d-b8a6-b17bdee2c6c7" />
-
 
 👉 Result: Dashboards provided visibility into brute-force patterns, successful logons, and geographic anomalies.
 
@@ -148,10 +141,9 @@ Correlate with successful logons to detect potential compromise.
 Escalate incidents to the OS Ticket system for further investigation.
 
 📌 Failed login attempts from different locations.png (geo-view of failed logins)
-<img width="1920" height="988" alt="2025-08-19 08_41_25- Failed login attempts from different locations" src="https://github.com/user-attachments/assets/f188653f-35dc-4a6f-8bc6-b374cebd46a3" />
+
 
 Successful login attempt with LogonType 10 & 7.png (confirmation of successful intrusion)
-<img width="1918" height="988" alt="2025-08-19 08_53_06- Successful loggin attempt with LogonType 10   7" src="https://github.com/user-attachments/assets/d250d4f6-ed34-42c3-b4ba-02f213e38d18" />
 
 
 👉 Result: Workflow validated the SOC’s ability to detect, investigate, and escalate brute-force and intrusion attempts.
