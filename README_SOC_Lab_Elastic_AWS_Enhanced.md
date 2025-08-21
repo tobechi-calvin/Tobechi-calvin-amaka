@@ -42,7 +42,7 @@ It demonstrates hands-on skills in **cloud deployment, threat detection, log ana
 ## ⚙️ Configuration & Setup Highlights
 - ✅ Installed **Java 11 (OpenJDK)** for Elasticsearch/Kibana  
   <img width="806" height="93" alt="Java installed as the requirement to install elastic and kibana" src="https://github.com/user-attachments/assets/b96f6c9e-a71f-4fc1-942b-4cd9f5c0d60b" />
- `Java installed as the requirement to install elastic and kibana`
+                          `Java installed as the requirement to install elastic and kibana`
 
 - ✅ Deployed and validated services:
   - `elasticsearch.service` → **Active**
