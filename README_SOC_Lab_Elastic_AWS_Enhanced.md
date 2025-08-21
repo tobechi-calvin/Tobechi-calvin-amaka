@@ -7,101 +7,166 @@
 
 ---
 
+This project showcases my ability to design, deploy, and monitor a **Security Operations Center (SOC) lab environment** in AWS using the **Elastic Stack (Elasticsearch, Kibana, and Fleet)**.  
+It demonstrates hands-on skills in **cloud deployment, threat detection, log analysis, and incident response workflows**.
+
+---
+
 ## 🔧 Project Overview
-As part of a hands, I designed and deployed a fully functional **Security Operations Center (SOC)** lab environment in AWS. This project demonstrates my ability to build, configure, and monitor infrastructure for real-time threat detection and log analysis using the **Elastic Stack (Elasticsearch, Kibana, and Fleet)**.
+- Built a **fully functional SOC lab** in AWS with Ubuntu (Elastic Stack) and Windows Server endpoints.
+- Configured **Elastic Agents** to forward logs into Elasticsearch via a Fleet Server.
+- Enabled **real-time monitoring and visualization** of logs in Kibana.
+- Integrated an **OS Ticket Server** to simulate incident triage.
+- Simulated **attacker infrastructure (Kali Linux & C2 Server)** to test detection capabilities.
 
 ---
 
 ## 🧩 Architecture Summary
 - **Elastic & Kibana**: Centralized log collection and visualization.
 - **Fleet Server**: Manages Elastic Agents across endpoints.
-- **Elastic Agents**: Deployed on both Linux (SSH) and Windows (RDP) servers to collect and forward logs.
-- **OS Ticket Server**: Simulates incident management by receiving alert notifications.
+- **Elastic Agents**: Installed on both Linux (SSH) and Windows (RDP) servers.
+- **OS Ticket Server**: Simulates incident management workflows.
 - **SOC Analyst Workstation**: Accesses Kibana dashboard via web GUI.
-- **Attacker Infrastructure (Kali & C2 Server)**: Simulates external threat actors for testing detection.
+- **Attacker Infrastructure**: Kali Linux & C2 server for red-team simulations.
 
 **VPC Configuration:**
 - Private Subnet: `172.31.0.0/24`
-- Elastic Stack and agents deployed within this network on AWS EC2 instances.
+- All services deployed on AWS EC2 instances.
 
-📌 **Network Diagram:**  
-![30 day challenge drawio - draw io](https://github.com/user-attachments/assets/99405748-db0b-4dff-95fe-74e35777c400)
+📌**Architecture Diagram**
+<img width="1040" height="853" alt="30 day challenge drawio - draw io" src="https://github.com/user-attachments/assets/a75aaf7f-5d79-436c-a764-5f93a4f5fec1" />
+
 
 ---
 
 ## ⚙️ Configuration & Setup Highlights
+- ✅ Installed **Java 11 (OpenJDK)** for Elasticsearch/Kibana  
+  <img width="806" height="93" alt="Java installed as the requirement to install elastic and kibana" src="https://github.com/user-attachments/assets/b96f6c9e-a71f-4fc1-942b-4cd9f5c0d60b" />
+ `Java installed as the requirement to install elastic and kibana`
 
-✅ **Installed Java 11 (OpenJDK)** to support Elasticsearch/Kibana  
-📌 *Screenshot:*  
-![Java installed as the requirement to install elastic and kibana](https://github.com/user-attachments/assets/1bf3b3db-0559-4e3b-91c1-06d6365fcca4)
+- ✅ Deployed and validated services:
+  - `elasticsearch.service` → **Active**
+  - `kibana.service` → **Active**  
+  <img width="1874" height="854" alt="Elastic and Kibana installed and running" src="https://github.com/user-attachments/assets/d78ad67c-009b-4c8e-996d-f8c8af7d4c2a" />
+ `Elastic and Kibana installed and running`
 
----
+- ✅ Configured AWS **Security Groups**:
+  - 443 (HTTPS for Kibana)
+  - 9200 (Elasticsearch REST API)
+  - 22 (SSH), 3389 (RDP)  
+  <img width="1883" height="817" alt="ModifyInboundSecurityGroupRules _ EC2 _ us-east-1" src="https://github.com/user-attachments/assets/11b98d8b-c3bd-4712-98c3-39fc4049d911" />
+ 
+    - `ModifyInboundSecurityGroupRules _ EC2 _ us-east-1`  
+    - `ModifyInboundSecurityGroupRules _ EC2 _ us-east-1_RDP`
 
-✅ **Successfully deployed and validated services**:
-- `elasticsearch.service` → ✅ *Active*
-- `kibana.service` → ✅ *Active*
+- ✅ Verified data ingestion in Kibana Discover  
+  <img width="1915" height="985" alt="Discover - Elastic logs" src="https://github.com/user-attachments/assets/1dc7b54c-4236-4780-ae2c-12b96f0e3f38" />
+ `Elastic GUI`
 
-📌 *Screenshot:*  
-![Elastic and Kibana installed and running](https://github.com/user-attachments/assets/159ce0a3-cb11-4a1a-8199-465ab8b5eeef)
+- ✅ Created **Fleet Server** and enrolled agents:  
+  - Windows Server (RDP)  
+  - Ubuntu Server (SSH)  
+  <img width="1919" height="979" alt="Agents - Fleet - Elastic" src="https://github.com/user-attachments/assets/26cdfd16-d68b-4500-912f-c18190843cca" />
+ `Agents - Fleet - Elastic`
 
----
-
-✅ **Customized AWS Security Group rules** for ports:  
-- `443` (HTTPS for Kibana)  
-- `9200` (Elasticsearch REST API)  
-- `22` (SSH), `3389` (RDP)
-
-📌 *Inbound Rules for Elastic/Kibana/Ubuntu:*  
-![ModifyInboundSecurityGroupRules _ EC2 _ us-east-1](https://github.com/user-attachments/assets/fa63b6ed-38c3-465c-bd7f-6df7ab139143)
-
-
-📌 *Inbound Rules for RDP (Windows Server):*  
-![ModifyInboundSecurityGroupRules _ EC2 _ us-east-1_RDP](https://github.com/user-attachments/assets/5ba3c992-aa22-41a6-ae13-0682f7908cdc)
-
----
-
-✅ **Verified data ingestion on Kibana Discover**  
-📌 *Screenshot:*  
-![Elastic GUI](https://github.com/user-attachments/assets/090fb673-913d-4f9c-a908-25e10cdc88c8)
-
-
----
-
-✅ **Created a Fleet Server and enrolled agents from:**
-- Windows Server (RDP)
-- Ubuntu Server (SSH)
-
-📌 *Screenshot:*  
-![Agents - Fleet - Elastic](https://github.com/user-attachments/assets/c4f10688-dd0b-41bf-9c35-edda473dfcef)
-
----
-
-✅ **Accessed Windows Server via RDP**  
-📌 *Screenshot:*  
-![Remote Desktop Connection](https://github.com/user-attachments/assets/aa1a2276-1f5e-4aa6-88d7-b90c5ffcd001)
+- ✅ Accessed Windows Server via RDP  
+  <img width="1901" height="1056" alt="Remote Desktop Connection" src="https://github.com/user-attachments/assets/11f13106-2cee-4a35-841f-434202d3216c" />
+ `Remote Desktop Connection`
 
 ---
 
 ## 🔍 Detection & Monitoring
-- **Live log data visualization** through Kibana (`logs-*` index pattern)
-- Monitored fields like `agent.name`, `cloud.account.id`, `timestamp`, etc.
-- Elastic Agent logs confirm successful communication with the Fleet server
+- Monitored logs in **Kibana Discover** (`logs-*` index pattern).
+- Validated ingestion of Windows Event Logs (e.g., Event ID 4624/4625) and Linux auth logs.
+- Example monitored fields:
+  - `agent.name`
+  - `cloud.account.id`
+  - `event.code`
+  - `timestamp`
+- Confirmed **agent-heartbeat and Fleet communication**.  
 
-📌 *Screenshot:*
-![Discover - Elastic logs](https://github.com/user-attachments/assets/ae5a63dd-fbb2-456e-9a1e-05500b2ce50c)
-
-(Already shown above in “Kibana Logs View”)
-
----
-
-## 🧪 Next Phase
-- Simulate attacker activity from Kali Linux (e.g., reverse shell or brute force)
-- Detect and alert on suspicious behavior using **Elastic Security**
-- Forward alerts to the **OS Ticket System** for incident triaging
-- Add ingest pipelines and detection rules via **Kibana Security Module**
+<img width="1915" height="985" alt="Discover - Elastic logs" src="https://github.com/user-attachments/assets/549411df-23db-48b3-abcb-3bf4b516de8c" />
+ `Discover - Elastic logs`
 
 ---
 
-## 📁 GitHub Repository
-👉 _Coming Soon 
+🧪 Next Phase – Attack Simulation & Detection
 
+As part of extending my SOC Home Lab, I simulated attacker activity from Kali Linux against a Windows Server target and monitored detection within Elastic. This phase demonstrates practical offensive testing (Red Team) and defensive monitoring (Blue Team) workflows.
+
+🔓 1. Brute-Force Simulation from Kali Linux
+
+Using Crowbar from a Kali Linux machine, I launched a brute-force attack against the Windows Server’s RDP service.
+
+📌Crowbar brute-force attempt on RDP
+<img width="1920" height="656" alt="2025-08-18 14_32_08-KaliLinux2024  Running  - Oracle VM VirtualBox" src="https://github.com/user-attachments/assets/293333bb-d606-49da-8198-5a33edcf5ac2" />
+
+
+Elastic map showing failed RDP logins from multiple geolocations
+<img width="1892" height="991" alt="2025-08-19 08_35_34- Dashboard" src="https://github.com/user-attachments/assets/22349cb3-44f0-440c-9887-0954757a023d" />
+
+
+👉 Result: Elastic successfully logged failed RDP attempts across different IPs (US, Iran, Russia), confirming visibility into brute-force attempts.
+
+🕵️ 2. Successful Intrusion & Post-Exploitation
+
+After repeated attempts, the brute-force simulation resulted in a successful login. From Kali, I connected to the Windows Server via RDP and executed reconnaissance commands (whoami, ipconfig, net user administrator) to simulate persistence.
+
+📌RDP connection from Kali
+<img width="1916" height="1031" alt="2025-08-18 14_53_12- - Copy" src="https://github.com/user-attachments/assets/2c76d2c1-d355-4164-b715-03557a72456e" />
+
+Successful login attempt with LogonType 10 & 7
+Elastic detection of successful login event
+<img width="1918" height="988" alt="2025-08-19 08_53_06- Successful loggin attempt with LogonType 10   7" src="https://github.com/user-attachments/assets/ed29fec1-0ee4-442b-9592-03fb49619128" />
+
+👉 Result: Elastic captured Event ID 4624 with LogonType 10 (remote) and LogonType 7 (unlock), confirming attacker access and persistence.
+
+📊 3. Detection in Elastic
+
+I configured Elastic SIEM dashboards to monitor both failed and successful authentication attempts.
+
+📌 Dashboard.png (SOC dashboard overview)
+<img width="1892" height="991" alt="2025-08-19 08_35_34- Dashboard" src="https://github.com/user-attachments/assets/1c4e071d-c3c8-4298-ae83-0469868ccdd1" />
+
+
+Discover - Elastic logs.png (raw failed/successful login events)
+
+Successful login attempt with LogonType 10 & 7.png (highlighted detection logs)
+<img width="1918" height="988" alt="2025-08-19 08_53_06- Successful loggin attempt with LogonType 10   7" src="https://github.com/user-attachments/assets/635d263b-e222-4a0d-b8a6-b17bdee2c6c7" />
+
+
+👉 Result: Dashboards provided visibility into brute-force patterns, successful logons, and geographic anomalies.
+
+🛡️ 4. SOC Analyst Investigation Workflow
+
+The SOC triage process was tested using the simulated attack. Analysts can:
+
+Identify failed login spikes from unusual geolocations.
+
+Correlate with successful logons to detect potential compromise.
+
+Escalate incidents to the OS Ticket system for further investigation.
+
+📌 Failed login attempts from different locations.png (geo-view of failed logins)
+<img width="1920" height="988" alt="2025-08-19 08_41_25- Failed login attempts from different locations" src="https://github.com/user-attachments/assets/f188653f-35dc-4a6f-8bc6-b374cebd46a3" />
+
+Successful login attempt with LogonType 10 & 7.png (confirmation of successful intrusion)
+<img width="1918" height="988" alt="2025-08-19 08_53_06- Successful loggin attempt with LogonType 10   7" src="https://github.com/user-attachments/assets/d250d4f6-ed34-42c3-b4ba-02f213e38d18" />
+
+
+👉 Result: Workflow validated the SOC’s ability to detect, investigate, and escalate brute-force and intrusion attempts.
+
+✅ Key Takeaways
+
+Elastic provided end-to-end visibility across brute-force attempts, successful logins, and post-exploitation activity.
+
+Simulation validated Red Team vs Blue Team workflows in a controlled AWS SOC lab.
+
+Next improvements include:
+
+Automating detection rules for brute-force spikes.
+
+Forwarding alerts to OS Ticket for incident triage.
+
+Expanding detection use cases (reverse shell, persistence, privilege escalation).
+** STAY TUNE**
