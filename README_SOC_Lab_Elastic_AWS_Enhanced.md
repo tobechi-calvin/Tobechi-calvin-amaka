@@ -117,18 +117,20 @@ Elastic detection of successful login event
 
 
 👉 Result: Elastic captured Event ID 4624 with LogonType 10 (remote) and LogonType 7 (unlock), confirming attacker access and persistence.
+<img width="1920" height="986" alt="2025-08-24 03_58_39-Successful login" src="https://github.com/user-attachments/assets/43e2e39f-855c-4656-8f93-c7e6ca6e5440" />
 
 📊 3. Detection in Elastic
 
 I configured Elastic SIEM dashboards to monitor both failed and successful authentication attempts.
 
 📌 Dashboard.png (SOC dashboard overview)
-
-Discover - Elastic logs.png (raw failed/successful login events)
-
-Successful login attempt with LogonType 10 & 7.png (highlighted detection logs)
+<img width="1898" height="993" alt="2025-08-21 15_08_37-2025-08-19 08_35_34- Dashboard 11111" src="https://github.com/user-attachments/assets/260c1740-c7c0-4ef6-ab5c-272a1019d9f3" />
 
 👉 Result: Dashboards provided visibility into brute-force patterns, successful logons, and geographic anomalies.
+
+Discover - Elastic logs.png (raw failed/successful login events)
+Successful login attempt with LogonType 10 & 7.png (highlighted detection logs)
+<img width="1920" height="986" alt="2025-08-24 03_58_39-Successful login" src="https://github.com/user-attachments/assets/474c9261-885d-485b-8401-331b4d933dda" />
 
 🛡️ 4. SOC Analyst Investigation Workflow
 
@@ -142,9 +144,7 @@ Escalate incidents to the OS Ticket system for further investigation.
 
 📌 Failed login attempts from different locations.png (geo-view of failed logins)
 
-
-Successful login attempt with LogonType 10 & 7.png (confirmation of successful intrusion)
-
+<img width="1898" height="993" alt="2025-08-21 15_08_37-2025-08-19 08_35_34- Dashboard 11111" src="https://github.com/user-attachments/assets/6db4f22c-2dfd-4359-8e83-e71ddf4692d3" />
 
 👉 Result: Workflow validated the SOC’s ability to detect, investigate, and escalate brute-force and intrusion attempts.
 
