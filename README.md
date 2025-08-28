@@ -2,8 +2,10 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/tobechi-calvin-79003925a/)
 
-I’m a dedicated Tier 2 SOC Analyst with hands-on experience in threat detection, incident response, log analysis, SIEM tools, and Python automation. I specialize in building, tuning, and defending enterprise-level environments, with a deep interest in threat hunting and blue teaming.
+![Profile views](https://komarev.com/ghpvc/?username=tobechicalvin&label=Profile%20views&style=flat)
 
+**Tier 2 SOC Analyst** — threat detection • incident response • log analysis • SIEM • Python automation  
+I build, tune, and defend enterprise environments, with a deep interest in threat hunting and blue teaming.
 ---
 
 🚀 **Popular GitHub Projects**
