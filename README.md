@@ -14,7 +14,9 @@ I build, tune, and defend enterprise environments, with a deep interest in threa
 |-------------|-------------|
 | [SOC Analyst Lab Setup](https://github.com/tobechi-calvin/Splunk-Projects/blob/main/README.md) | ELK Stack + Fleet Integration lab for centralized security monitoring |
 | [Windows Security Log Analysis](https://github.com/tobechi-calvin/Windows-Security-Log-Analysis) | Investigating Windows logs for real-world security events |
-| [ELK-Stack-Log-Analysis](https://github.com/tobechi-calvin/Log-Analysis-and-Incident-Response-with-ELK-Stack-Elasticsearch-Logstash-Kibana-on-Linux.md) | ELK Stack log for aggregating, searching, visualizing, and analyzing log data | 
+| [ELK-Stack-Log-Analysis](https://github.com/tobechi-calvin/Log-Analysis-and-Incident-Response-with-ELK-Stack-Elasticsearch-Logstash-Kibana-on-Linux.md) | ELK Stack log for aggregating, searching, visualizing, and analyzing log data |
+| [SSH brute force incident report](https://github.com/tobechi-calvin/ssh-brute-force-incident-report) | SSH brute force incident report, aggregating, searching, visualizing, and analyzing log data |
+
 ---
 💬 Let's Connect
 
