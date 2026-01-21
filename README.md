@@ -17,6 +17,7 @@ I build, tune, and defend enterprise environments, with a deep interest in threa
 | [ELK-Stack-Log-Analysis](https://github.com/tobechi-calvin/Log-Analysis-and-Incident-Response-with-ELK-Stack-Elasticsearch-Logstash-Kibana-on-Linux.md) | ELK Stack log for aggregating, searching, visualizing, and analyzing log data |
 | [SSH brute force incident report](https://github.com/tobechi-calvin/ssh-brute-force-incident-report) | Detection and investigation of an SSH brute-force attack using authentication logs, including attacker correlation, timeline reconstruction, and compromise assessment |
 | [RDP brute force incident report](https://github.com/tobechi-calvin/RDP-Brute-Force-Investigation-Successful-Authentication-Microsoft-Sentinel-) | Analysis of a successful RDP brute-force attack using Windows Security logs, highlighting authentication abuse, attacker attribution, and SOC incident response methodology |
+| [Phishing Campaign With Credential Harvesting](https://github.com/tobechi-calvin/SOC-Incident-Investigation-Creator-Phishing-Campaign-With-Credential-Harvesting) | Incident Investigation – Creator Phishing Campaign With Credential Harvesting |
 ---
 💬 Let's Connect
 
