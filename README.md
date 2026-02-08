@@ -18,6 +18,8 @@ I build, tune, and defend enterprise environments, with a deep interest in threa
 | [SSH brute force incident report](https://github.com/tobechi-calvin/ssh-brute-force-incident-report) | Detection and investigation of an SSH brute-force attack using authentication logs, including attacker correlation, timeline reconstruction, and compromise assessment |
 | [RDP brute force incident report](https://github.com/tobechi-calvin/RDP-Brute-Force-Investigation-Successful-Authentication-Microsoft-Sentinel-) | Analysis of a successful RDP brute-force attack using Windows Security logs, highlighting authentication abuse, attacker attribution, and SOC incident response methodology |
 | [Phishing Campaign With Credential Harvesting](https://github.com/tobechi-calvin/SOC-Incident-Investigation-Creator-Phishing-Campaign-With-Credential-Harvesting) | Incident Investigation – Creator Phishing Campaign With Credential Harvesting |
+| [Attempted Lateral Movement (Blocked)](https://github.com/tobechi-calvin/lateral-movement-remote-logon) | Investigation of NTLM remote logon attempts against an administrator account, blocked before lateral movement |
+| [Ransomware Execution – Win32/Phobos](https://github.com/tobechi-calvin/Ransomware-Execution-Win32-Phobos-) | High-severity ransomware detection, IOC analysis, host isolation, and recovery actions |
 ---
 💬 Let's Connect
 
