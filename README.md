@@ -1,4 +1,4 @@
-## 👋 Hi, I’m Tobechi Calvin Amaka
+## 👋 Hi, I’m Tobechi Calvin
 
 **Tier 2 SOC Analyst** focused on threat detection, incident response, and SIEM engineering.
 I build hands-on security labs to simulate attacks, detect malicious activity, and document investigations from initial alert to remediation.
