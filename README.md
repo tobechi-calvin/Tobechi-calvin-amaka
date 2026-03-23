@@ -15,6 +15,7 @@ I build hands-on security labs to simulate attacks, detect malicious activity, a
 
 * Splunk
 * Wazuh
+* Sentiel
 * ELK Stack (Elasticsearch, Logstash, Kibana)
 * Prometheus & Grafana
 
